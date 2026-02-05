@@ -1,0 +1,17 @@
+<div class="admin-shell" [class.sidebar-collapsed]="isSidebarCollapsed">
+  <app-admin-sidebar (navigate)="isSidebarCollapsed = true"></app-admin-sidebar>
+  
+  <button class="sidebar-toggle" (click)="toggleSidebar()">
+    <span class="material-icons">
+      {{ isSidebarCollapsed ? "chevron_right" : "chevron_left" }}
+    </span>
+  </button>
+
+  <div class="admin-content">
+    <app-admin-topbar (menuClick)="toggleSidebar()"></app-admin-topbar>
+
+    <main class="admin-main">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

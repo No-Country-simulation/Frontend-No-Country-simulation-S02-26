@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-reports',
+    template: `
+    <div class="dashboard-container">
+      <h1 class="page-title">Reportes</h1>
+      <div class="card">
+        <p>Analíticas y Reportes del Sistema</p>
+      </div>
+    </div>
+  `
+})
+export class ReportsComponent { }

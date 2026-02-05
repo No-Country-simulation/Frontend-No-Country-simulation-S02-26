@@ -1,0 +1,48 @@
+
+.admin-shell {
+  position: relative;
+  width: 100%;
+  height: 100vh;          
+  overflow: hidden;       
+  background: #f8fafc;
+}
+
+
+.sidebar-container {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 260px;
+  height: calc(90vh - 64px);
+  z-index: 300;
+}
+
+
+.admin-content {
+  position: absolute;   
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.admin-main {
+  position: absolute;    
+  top: 64px;
+  left: 260px;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+
+.admin-shell.sidebar-collapsed .sidebar-container {
+  transform: translateX(-100%);
+}
+
+.admin-shell.sidebar-collapsed .admin-main {
+  left: 0;
+}
