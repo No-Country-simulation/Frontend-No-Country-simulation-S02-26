@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'app-admin-sidebar',
@@ -7,6 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class AdminSidebarComponent {
      @Output() navigate = new EventEmitter<void>();
+      @Input() collapsed = false;
 
   navItems = [
     { label: 'Dashboard', icon: 'dashboard', route: '/admin', active: false },
@@ -20,5 +21,10 @@ export class AdminSidebarComponent {
 
   onNavigate(): void {
     this.navigate.emit();
+  }
+
+   @HostBinding('class.collapsed')
+  get isCollapsed() {
+    return this.collapsed;
   }
 }

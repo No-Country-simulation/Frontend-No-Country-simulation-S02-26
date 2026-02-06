@@ -1,9 +1,13 @@
-<div class="admin-shell" [class.sidebar-collapsed]="isSidebarCollapsed">
-  <app-admin-sidebar (navigate)="isSidebarCollapsed = true"></app-admin-sidebar>
-  
+<div class="admin-shell">
+
+  <app-admin-sidebar
+    [collapsed]="isSidebarCollapsed"
+    (navigate)="isSidebarCollapsed = true">
+  </app-admin-sidebar>
+
   <button class="sidebar-toggle" (click)="toggleSidebar()">
     <span class="material-icons">
-      {{ isSidebarCollapsed ? "chevron_right" : "chevron_left" }}
+      {{ isSidebarCollapsed ? 'chevron_right' : 'chevron_left' }}
     </span>
   </button>
 
@@ -14,4 +18,5 @@
       <router-outlet></router-outlet>
     </main>
   </div>
+
 </div>
