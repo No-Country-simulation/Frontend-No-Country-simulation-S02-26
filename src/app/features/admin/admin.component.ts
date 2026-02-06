@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AdminComponent {
     stats = [
         { label: 'Acompañantes', value: '245', icon: 'groups', color: 'blue' },
-        { label: 'Pacientes', value: '1,372', icon: 'elderly_woman', color: 'orange' },
+        { label: 'Pacientes/Familia', value: '1,372', icon: 'elderly_woman', color: 'orange' },
         { label: 'Balance', value: '$105,265.75', icon: 'account_balance_wallet', color: 'green' }
     ];
 
