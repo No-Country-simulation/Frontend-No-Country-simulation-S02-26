@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AdminLayoutComponent { 
     
-  isSidebarCollapsed = false;
+  isSidebarCollapsed = true;
 
   toggleSidebar(): void {
     this.isSidebarCollapsed = !this.isSidebarCollapsed;
