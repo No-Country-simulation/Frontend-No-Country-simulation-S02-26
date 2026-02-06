@@ -26,7 +26,6 @@
 
 .login-card {
     background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
-    /* Soft metallic look */
     width: 100%;
     max-width: 400px;
     padding: 3rem;
@@ -35,13 +34,12 @@
         0 4px 6px -1px rgba(0, 0, 0, 0.05),
         0 2px 4px -1px rgba(0, 0, 0, 0.03),
         0 0 0 1px rgba(255, 255, 255, 0.5) inset;
-    /* Subtle inner highlight */
+   
     border: 1px solid rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
     gap: 2rem;
     backdrop-filter: blur(10px);
-    /* Glassmorphism hint */
 }
 
 .brand {
@@ -60,7 +58,7 @@
 
 .brand p {
     margin: 0;
-    margin-left: 15%;
+    margin-left: 24%;
     color: #6b7280;
     font-size: 0.95rem;
 }
@@ -94,7 +92,6 @@
 .form-control {
     width: 100%;
     padding: 12px 12px 12px 42px;
-    /* Left padding for icon */
     border: 1px solid #d1d5db;
     border-radius: 8px;
     font-size: 0.95rem;
@@ -124,7 +121,6 @@
     width: 100%;
     padding: 12px;
     background-color: #1a1e29;
-    /* Dark corporate color */
     color: white;
     border: none;
     border-radius: 8px;
@@ -147,7 +143,7 @@
     cursor: not-allowed;
 }
 
-/* Spinner */
+
 .spinner {
     width: 20px;
     height: 20px;

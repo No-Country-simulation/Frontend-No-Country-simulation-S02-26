@@ -6,7 +6,7 @@
   height: calc(100vh - 64px);
   background-color: #1a1e29;
   z-index: 200;
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 
